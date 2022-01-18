@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/**l'etoile permet de designer tout les element HTML (div, p, ul, li, etc...*/
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #ff6347;
+    --orange-dark: #ff6347;
+    --grey: #797878;
+    --grey-opacity: #d9d7d7;  
+  }
+
+
+
+
+*{
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+}
+
+
+
+header section {
+    background-image: url(../images/hero-image.jpg); /*je declare le baground image */
+    background-size: cover; /*je regle l'image pouir la voir entiere/*/
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--orange-dark);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+
+.separator {
+  border: 1px solid var(--orange);
+  width: 130px;
+  margin: 20px auto;
+}
