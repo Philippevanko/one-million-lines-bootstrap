@@ -44,3 +44,48 @@ header section {
   width: 130px;
   margin: 20px auto;
 }
+.circle {
+  width: 100px;/*je fais un carré*/
+  height: 100px;
+
+  background-color: var(--black);/*je donne une couleur au cercle*/
+  border-radius: 50px;/*j'arrondi le carré fait au dessus*/
+  margin: 60px auto auto auto;/*centrage de marge au milieu*/
+  display: flex; /*lancer desplay box pour aligner le contenu des cercle*/
+  align-items: center;/* align seulement avec display flex*/
+  justify-content: center;
+}
+
+.circle img {
+  filter:invert(100%);/*j'inverse la couleur des logo*/
+  width: 65px;/*regler la grosseur des icons*/
+}
+
+.btn-light {
+  background-color: var(--white);
+  border: 1px solid var(--grey-light);
+  color: var(--orange);
+}
+
+/*
+** Footer
+*/
+footer {
+  background-color: var(--orange);
+  padding: 150px 0 30px 0;/*marge haut , droite ; bas , gauche*/
+}
+footer img {
+  width: 80%;/*donne une taille relative a l'image selon la largeur de l'ecran */
+}
+
+@media screen and (min-width:1200px) {
+  /* modification de la classe Bootstrap pour le rendu desktop*/
+  .w-75 {
+    width: 50% ! important;
+
+  }
+  footer img {
+    width:auto;
+  }
+
+}
